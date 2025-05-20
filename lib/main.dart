@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:list_exercise_app/screens/list_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,12 +10,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      title: 'List exercise',
+      theme: ThemeData(scaffoldBackgroundColor: Colors.purple[200]),
+      home: ListScreen(),
     );
   }
 }
